@@ -1,0 +1,39 @@
+diff -Naur cifs-utils-5.6/configure cifs-utils-5.6wybox/configure
+--- cifs-utils-5.6/configure	2012-07-26 16:44:07.000000000 +0200
++++ cifs-utils-5.6wybox/configure	2012-08-29 19:55:22.223281363 +0200
+@@ -4882,7 +4882,7 @@
+ $as_echo "#define HAVE_MALLOC 1" >>confdefs.h
+ 
+ else
+-  $as_echo "#define HAVE_MALLOC 0" >>confdefs.h
++  $as_echo "#define HAVE_MALLOC 1" >>confdefs.h
+ 
+    case " $LIBOBJS " in
+   *" malloc.$ac_objext "* ) ;;
+@@ -4891,7 +4891,7 @@
+ esac
+ 
+ 
+-$as_echo "#define malloc rpl_malloc" >>confdefs.h
++$as_echo "//#define malloc rpl_malloc" >>confdefs.h
+ 
+ fi
+ 
+@@ -4949,7 +4949,7 @@
+ $as_echo "#define HAVE_REALLOC 1" >>confdefs.h
+ 
+ else
+-  $as_echo "#define HAVE_REALLOC 0" >>confdefs.h
++  $as_echo "#define HAVE_REALLOC 1" >>confdefs.h
+ 
+    case " $LIBOBJS " in
+   *" realloc.$ac_objext "* ) ;;
+@@ -4958,7 +4958,7 @@
+ esac
+ 
+ 
+-$as_echo "#define realloc rpl_realloc" >>confdefs.h
++$as_echo "//#define realloc rpl_realloc" >>confdefs.h
+ 
+ fi
+
